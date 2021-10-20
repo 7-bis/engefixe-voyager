@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Http\Controllers;
+
 use Illuminate\Support\Facades\Route;
 use TCG\Voyager\Facades\Voyager;
 
@@ -14,10 +16,11 @@ use TCG\Voyager\Facades\Voyager;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
+Route::get('/', [HomeController::class,'index']);
+Route::get('/obras', [ObraController::class,'index']);
+Route::get('/obras/{id}', [ObraController::class,'show'])->name('obras.show');
+Route::get('/servicos', [ServicosController::class,'index']);
+Route::get('/contato', [ContatoController::class,'index']);
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
