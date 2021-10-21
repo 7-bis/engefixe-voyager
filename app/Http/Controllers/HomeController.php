@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Banner;
 use App\Depoimento;
 use App\Http\Controllers\Controller;
-use App\Obra;
+use App\Models\Obra;
 use App\Parceiro;
 use App\Servico;
 use Illuminate\Http\Request;
