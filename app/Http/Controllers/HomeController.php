@@ -18,7 +18,7 @@ class HomeController extends Controller
         $data['services'] = Servico::all();
         $data['partners'] = Parceiro::all();
         $data['banners'] = Banner::all();
-        $data['latest_constructions'] = Obra::latest()->take(2);
+        $data['latest_constructions'] = Obra::latest()->take(2)->get();
         return view('home',$data);
     }
 }

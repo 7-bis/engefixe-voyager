@@ -42,7 +42,7 @@
                     </div><!-- /.img-box -->
                     <div class="text-box" style="padding:0 20px 0 20px; height: 100px;">
                         <div class="meta-info">
-                            <a href="{{ route('obras.show',['id' => $obra->id]) }}"><i class="fas fa-home"></i> {{ $obra->category->name }}</a>
+                            <a href="{{ route('obras.show',['id' => $obra->id]) }}"><i class="fas fa-home"></i> {{ optional($obra->categories)->name }}</a>
                         </div><!-- /.meta-info -->
                         <a href="{{ route('obras.show',['id' => $obra->id]) }}"><h3>{{ $obra->titulo }}</h3></a>
                     </div><!-- /.text-box -->

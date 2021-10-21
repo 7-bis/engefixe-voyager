@@ -14,15 +14,15 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
         @foreach ($banners as $banner)
-        <div @if ($loop->first) class="carousel-item item active" @else class="carousel-item item" @endif style="background-image: url('{{$banner->url}}');background-position: center center;">
+        <div @if ($loop->first) class="carousel-item item active" @else class="carousel-item item" @endif style="background-image: url('{{Voyager::image($banner->image)}}');background-position: center center;">
             <div class="carousel-caption">
                 <div class="container">
                     <div class="box valign-middle">
                         <div class="content text-center">
-                            <h3 data-animation="animated fadeInUp" class="">{{$banner->title}}</h3>
-                            <h2 data-animation="animated fadeInUp" class="">{{$banner->subtitle}}</h2>
+                            <h3 data-animation="animated fadeInUp" class="">{{$banner->titulo}}</h3>
+                            <h2 data-animation="animated fadeInUp" class="">{{$banner->subtitulo}}</h2>
                             <!-- <p data-animation="animated fadeInDown" class=""></p> -->
-                            @if($banner->link != null) <a href="#" class="banner-btn" data-animation="animated fadeInDown">Ver mais</a> @endif
+                            @if($banner->link != null) <a href="{{$banner->link}}" target="_blank" class="banner-btn" data-animation="animated fadeInDown">Ver mais</a> @endif
                         </div>
                     </div>
                 </div>
@@ -147,13 +147,13 @@
                                     <img src="{{ url('img/01.jpg')}}" width="60" alt="Awesome Image">
                                 </div><!-- /.icon-box -->
                                 <div class="text-box">
-                                    <h3>{{ $depo->title }}</h3>
+                                    <h3>{{ $depo->titulo }}</h3>
 
                                 </div><!-- /.text-box -->
                             </div><!-- /.top-box -->
                             <div class="content-box">
-                                {{ $depo->text }}
-                                <h4>- {{ $depo->author }}</h4>
+                                {!! Str::limit($depo->texto,250) !!}
+                                <h4>- {{ $depo->autor }}</h4>
                             </div><!-- /.content-box -->
                         </div><!-- /.single-testimonial-style-one -->
                     </div>
@@ -173,7 +173,7 @@
                     @foreach ($partners as $partner)
                     <div class="owl-item cloned" style="width: 162px;">
                         <div class="item">
-                            <img src="{{ $partner->url }}" alt="Parceiro" />
+                            <img src="{{ Voyager::image($partner->imagem) }}" alt="Parceiro" />
                         </div>
                     </div>
                     @endforeach
@@ -217,7 +217,7 @@
                         <div class="meta-info">
                         </div><!-- /.meta-info -->
                         <a href="#">
-                            <h3>{{$service->title}}</h3>
+                            <h3>{{$service->titulo}}</h3>
                         </a>
                     </div><!-- /.text-box -->
                 </div><!-- /.single-blog-style-two -->

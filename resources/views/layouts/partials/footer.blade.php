@@ -36,7 +36,7 @@
                         @foreach($latest_constructions as $obra)
                         <div class="single-recent-post">
                             <div class="img-box">
-                                <img src="{{ url('img/01.jpg') }}" width="100" alt="Awesome Image">
+                                <img src="{{ Voyager::image($obra->imagem) }}" width="100" alt="Awesome Image">
                             </div><!-- /.img-box -->
                             <div class="text-box">
                                 <a href="{{ route('obras.show',['id' => $obra->id]) }}"><h4>{{$obra->titulo}}</h4></a>
