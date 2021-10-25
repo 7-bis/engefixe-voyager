@@ -21,7 +21,7 @@
                         <div class="content text-center">
                             <h3 data-animation="animated fadeInUp" class="">{{$banner->title}}</h3>
                             <h2 data-animation="animated fadeInUp" class="">{{$banner->subtitle}}</h2>
-                            <!-- <p data-animation="animated fadeInDown" class=""></p> -->
+                            <p data-animation="animated fadeInDown" class="">{{$banner->text}}</p>
                             @if($banner->link != null) <a href="#" class="banner-btn" data-animation="animated fadeInDown">Ver mais</a> @endif
                         </div>
                     </div>
