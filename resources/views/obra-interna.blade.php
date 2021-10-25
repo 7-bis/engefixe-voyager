@@ -28,11 +28,11 @@
               <div class="single-blog-style-one">
 
                   <div class="text-box">
-                      <a href="blog-details.html"><h3>{{$construction->title}}</h3></a>
-                      <p>{{$construction->text}}</p>
+                      <a href="blog-details.html"><h3>{{$construction->titulo}}</h3></a>
+                      <p>{!!$construction->texto!!}</p>
                   </div><!-- /.text-box -->
                   <div class="img-box">
-                    <img src="files/img/01.jpg" alt="Awesome Image">
+                    <img src="{{Voyager::image($construction->imagem)}}" alt="Awesome Image">
                 </div><!-- /.img-box -->
               </div><!-- /.single-blog-style-one -->
 
