@@ -142,7 +142,7 @@
                     @foreach($testimonials as $depo)
                     <div class="col-md-6">
                         <div class="single-testimonial-style-one">
-                            <div class="top-box">
+                            {{-- <div class="top-box">
                                 <div class="icon-box">
                                     <img src="{{ url('img/01.jpg')}}" width="60" alt="Awesome Image">
                                 </div><!-- /.icon-box -->
@@ -150,10 +150,11 @@
                                     <h3>{{ $depo->titulo }}</h3>
 
                                 </div><!-- /.text-box -->
-                            </div><!-- /.top-box -->
+                            </div><!-- /.top-box --> --}}
+                            <h4><i class="fas fa-quote-left"></i> {{ $depo->autor }}</h4>
                             <div class="content-box">
                                 {!! Str::limit($depo->texto,250) !!}
-                                <h4>- {{ $depo->autor }}</h4>
+
                             </div><!-- /.content-box -->
                         </div><!-- /.single-testimonial-style-one -->
                     </div>
@@ -167,17 +168,11 @@
 <div class="brand-carousel-wrapper" style="padding: 2em 0">
     <div class="container">
         <div class="brand-carousel owl-carousel owl-theme owl-loaded mt-1">
-
-            <div class="owl-stage-outer">
-                <div class="owl-stage" style="">
-                    @foreach ($partners as $partner)
-                    <div class="owl-item cloned" style="width: 162px;">
-                        <div class="item">
-                            <img src="{{ Voyager::image($partner->imagem) }}" alt="Parceiro" />
-                        </div>
-                    </div>
-                    @endforeach
+            @foreach ($partners as $partner)
+                <div class="item">
+                    <img src="{{ Voyager::image($partner->imagem) }}" alt="Parceiro" />
                 </div>
+            @endforeach
             </div>
             <div class="owl-controls">
                 <div class="owl-nav">
