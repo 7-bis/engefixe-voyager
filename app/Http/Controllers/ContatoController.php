@@ -11,7 +11,7 @@ class ContatoController extends Controller
 {
     public function index() {
         $constructions = Obra::all();
-        $data['latest_constructions'] = $constructions->latest()->take(2)->get();
+        $data['latest_constructions'] = Obra::latest()->take(2)->get();
         return view('contato',$data);
     }
 }

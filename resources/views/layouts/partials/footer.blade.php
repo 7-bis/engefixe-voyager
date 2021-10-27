@@ -5,9 +5,9 @@
                 <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="footer-widget about-widget">
                         <a href="#"><img src="{{ url('img/header-logo-1-1.png') }}" width="150" alt="Awesome Image"></a>
-                        <p>Desde 2010, estamos no segmento da construção civil, construindo e realizando sonhos. Nossa trajetória sempre pautada em qualidade e credibilidade.
-                        Desde 2010, estamos no segmento da construção civil, construindo e realizando sonhos. Nossa trajetória sempre pautada em qualidade e credibilidade.</p>
-                        <p>Desde 2010, estamos no segmento da construção civil, construindo e realizando sonhos. Nossa trajetória sempre pautada em qualidade e credibilidade.</p>
+                        <p>Hoje, a Engefixe é reconhecida no mercado pela qualidade de seus serviços e prazos de suas obras.
+                           <br/> Apostando no diálogo com os clientes para dar resposta as necessidades e especificações, sempre com a máxima satisfação, a empresa tem se consolidado no ramo da construção civil, fundamentada numa filosofia marcada pela inovação e qualidade constantes.
+                           Confie sua obra à  Engefixe, com todos estes conceitos na caixa de ferramentas, ela tem nas mãos tudo o que precisa para que você e sua família possam viver bem!</p>
                         <div class="social">
                             <a href="#" class="fab fa-facebook-f"></a>
                             <a href="#" class="fab fa-instagram"></a>
@@ -39,7 +39,7 @@
                                 <img src="{{ Voyager::image($obra->imagem) }}" width="100" alt="Awesome Image">
                             </div><!-- /.img-box -->
                             <div class="text-box">
-                                <a href="{{ route('obras.show',['id' => $obra->id]) }}"><h4>{{$obra->titulo}}</h4></a>
+                                <a href="{{ route('obras.show',['id' => $obra->id]) }}"><h4>{{ Str::limit($obra->titulo,40)}}</h4></a>
                             </div><!-- /.text-box -->
                         </div><!-- /.single-recent-post -->
                         @endforeach

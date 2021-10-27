@@ -14,7 +14,7 @@ class HomeController extends Controller
 {
     public function index() {
         $data['testimonials'] = Depoimento::all();
-        $data['constructions'] = Obra::with('categories')->get();
+        $data['constructions'] = Obra::with('categories')->take(3)->get();
         $data['services'] = Servico::all();
         $data['partners'] = Parceiro::all();
         $data['banners'] = Banner::all();

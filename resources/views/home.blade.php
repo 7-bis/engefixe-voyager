@@ -95,8 +95,8 @@
                 <div class="about-content">
                     <h3>Sobre nós</h3>
                     <span>Conheça nossa história.</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudexe rc itation ullamco laboris nisi ut aliquip ex ea com modo consequat. Duis aute irure.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudexe rc itation ullamco laboris nisi ut aliquip ex ea com modo consequat. Duis aute irure.</p>
+                    <p>A Engefixe nasceu para agregar valor ao seu lar. Por isso, ela trabalha para levar valores como qualidade, dedicação, respeito e compromisso ao lugar onde você e sua família passarão os melhores momentos das suas vidas.
+                       <p> Diariamente nossos colaboradores, nas mais diferentes frentes de serviços distribuídas na grande Mossoró e região, trabalham com determinação para colocar em prática soluções que vão garantir a qualidade dos serviços realizados.</p>
                     <!--
                         <div class="brand-logos">
                         <img src="{{ url('about-b-1-1.png')}}" alt="Awesome Image">
