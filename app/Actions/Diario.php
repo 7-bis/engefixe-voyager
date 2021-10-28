@@ -30,7 +30,7 @@ class Diario extends AbstractAction
 
     public function getDefaultRoute()
     {
-        return route('voyager.diarios.index');
+        return route('voyager.diarios.index',['obra' => $this->data]);
     }
 
     public function shouldActionDisplayOnDataType()

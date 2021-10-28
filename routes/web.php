@@ -24,4 +24,6 @@ Route::get('/contato', [ContatoController::class,'index']);
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
+
+    Route::get('/diarios/{id}/obras',[Admin\ObrasController::class, 'show'])->name('voyager.diarios.obra');
 });
