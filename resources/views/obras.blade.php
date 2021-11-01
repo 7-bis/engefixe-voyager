@@ -44,7 +44,7 @@
                         <div class="meta-info">
                             <a href="{{ route('obras.show',['id' => $obra->id]) }}"><i class="fas fa-home"></i> {{ optional($obra->categories)->name }}</a>
                         </div><!-- /.meta-info -->
-                        <a href="{{ route('obras.show',['id' => $obra->id]) }}"><h3>{{ $obra->titulo }}</h3></a>
+                        <a href="{{ route('obras.show',['id' => $obra->id]) }}"><h3>{{ Str::limit($obra->titulo,50) }}</h3></a>
                     </div><!-- /.text-box -->
                 </div><!-- /.single-blog-style-two -->
             </div>

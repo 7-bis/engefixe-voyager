@@ -206,12 +206,12 @@
                 <div class="single-blog-style-two">
                     <div class="img-box">
                         <img src="{{ url('img/s1.jpg')}}" alt="Awesome Image">
-                        <a href="#" class="read-more">Ver mais</a>
+                        <a href="{{ route('servicos.show',['id' => $service->id]) }}" class="read-more">Ver mais</a>
                     </div><!-- /.img-box -->
                     <div class="text-box">
                         <div class="meta-info">
                         </div><!-- /.meta-info -->
-                        <a href="#">
+                        <a href="{{ route('servicos.show',['id' => $service->id]) }}">
                             <h3>{{$service->titulo}}</h3>
                         </a>
                     </div><!-- /.text-box -->

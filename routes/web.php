@@ -19,7 +19,9 @@ use TCG\Voyager\Facades\Voyager;
 Route::get('/', [HomeController::class,'index']);
 Route::get('/obras', [ObraController::class,'index']);
 Route::get('/obras/{id}', [ObraController::class,'show'])->name('obras.show');
-Route::get('/servicos', [ServicosController::class,'index']);
+Route::get('/servicos', [ServicosController::class,'categoria'])->name('servicos.index');
+Route::get('/servicos/{id?}/categoria', [ServicosController::class,'categoria'])->name('servicos.categoria');
+Route::get('/servicos/{id}', [ServicosController::class,'show'])->name('servicos.show');
 Route::get('/contato', [ContatoController::class,'index']);
 
 Route::group(['prefix' => 'admin'], function () {

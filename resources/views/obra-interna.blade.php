@@ -26,16 +26,24 @@
       <div class="row">
           <div class="col-md-8">
               <div class="single-blog-style-one">
-
                   <div class="text-box">
                       <a href="blog-details.html"><h3>{{$construction->titulo}}</h3></a>
                       <p>{!!$construction->texto!!}</p>
                   </div><!-- /.text-box -->
                   <div class="img-box">
                     <img src="{{Voyager::image($construction->imagem)}}" alt="Awesome Image">
-                </div><!-- /.img-box -->
+                  </div><!-- /.img-box -->
               </div><!-- /.single-blog-style-one -->
-
+              <p></p>
+              @if($construction->imagens)
+              <div class="single-service-carousel owl-theme owl-carousel owl-loaded">
+                  @foreach (json_decode($construction->imagens, true) as $imagem)
+                    <div class="item">
+                        <img src="{{Voyager::image($imagem)}}" alt="Awesome Image">
+                    </div>
+                  @endforeach
+              </div>
+              @endif
           </div><!-- /.col-md-8 -->
           <div class="col-md-4">
               <div class="sidebar sidebar-right">

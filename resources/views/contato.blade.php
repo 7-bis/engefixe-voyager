@@ -56,7 +56,7 @@
                   <p>Através deste canal você pode contactar um de nossos atendentes e tirar dúvidas ou enviar mensagens</p>
                   <div class="single-contact-info">
                       <i class="zxp-icon-old-telephone-ringing"></i>
-                      <p>84 99999.9999</p>
+                      <p>(84) 3318-3330 | (84) 98840-0090</p>
                   </div><!-- /.single-contact-info -->
                   <div class="single-contact-info">
                       <i class="fas fa-envelope-open"></i>

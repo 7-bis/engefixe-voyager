@@ -1656,7 +1656,7 @@ body.active-preloader-ovh {
   right: 0;
   bottom: 0;
   z-index: 99;
-  background: rgba(249, 181, 34, 0.95);
+  background: rgba(70, 144, 155, 0.95);
   opacity: 0;
   border-radius: 4px;
   -webkit-transition: all .4s ease;
