@@ -19,9 +19,9 @@
                 <div class="container">
                     <div class="box valign-middle">
                         <div class="content text-center">
-                            <h3 data-animation="animated fadeInUp" class="">{{$banner->title}}</h3>
-                            <h2 data-animation="animated fadeInUp" class="">{{$banner->subtitle}}</h2>
-                            <p data-animation="animated fadeInDown" class="">{{$banner->text}}</p>
+                            <h3 data-animation="animated fadeInUp" class="">{{$banner->titulo}}</h3>
+                            <h2 data-animation="animated fadeInUp" class="">{{$banner->subtitulo}}</h2>
+                            {{-- <p data-animation="animated fadeInDown" class="">{{$banner->text}}</p> --}}
                             @if($banner->link != null) <a href="#" class="banner-btn" data-animation="animated fadeInDown">Ver mais</a> @endif
                         </div>
                     </div>
