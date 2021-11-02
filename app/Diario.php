@@ -14,7 +14,8 @@ class Diario extends Model
 
     public function scopeDaObra($query)
     {
+        return $query;
         // return dd($query);
-        return $query->where('sys_obra_id',1);
+        // return $query->where('sys_obra_id',1);
     }
 }
