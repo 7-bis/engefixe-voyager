@@ -58,7 +58,7 @@
                     <!-- <p>Conheça nossas obras</p> -->
                 </div><!-- /.col-md-6 -->
                 <div class="col-md-3 text-right">
-                    <a href="##" class="thm-btn">Ver mais</a>
+                    <a href="{{ url('/obras') }}" class="thm-btn">Ver mais</a>
                 </div><!-- /.col-md-3 -->
             </div><!-- /.row -->
         </div><!-- /.sec-title -->
@@ -196,7 +196,7 @@
                     <!-- <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <br> deserunt mollit anim id est laborum.</p> -->
                 </div><!-- /.col-md-6 -->
                 <div class="col-md-3 text-right">
-                    <a href="#" class="thm-btn">Veja mais</a>
+                    <a href="{{ url('/servicos') }}" class="thm-btn">Veja mais</a>
                 </div><!-- /.col-md-3 -->
             </div><!-- /.row -->
         </div><!-- /.sec-title -->

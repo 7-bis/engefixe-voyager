@@ -41,7 +41,7 @@
                 </ul>
             </div><!-- /.navbar-collapse -->
             <div class="right-side-box">
-                <a href="#" class="rqa-btn">Área do cliente</a>
+                <a href="{{ url('/admin') }}" class="rqa-btn">Área do cliente</a>
             </div><!-- /.right-side-box -->
         </div><!-- /.container -->
     </nav>

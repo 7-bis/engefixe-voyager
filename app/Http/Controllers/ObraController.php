@@ -13,6 +13,14 @@ class ObraController extends Controller
 {
     public function index() {
         $data['constructions'] = Obra::all();
+        $data['categorias_obras'] = Category::all();
+        $data['latest_constructions'] = Obra::latest()->take(2)->get();
+        return view('obras',$data);
+    }
+
+    public function categoria($categoria_id = null) {
+        $data['constructions'] = $categoria_id == null ? Obra::all() : Obra::where('category_id',$categoria_id)->get();
+        $data['categorias_obras'] = Category::all();
         $data['latest_constructions'] = Obra::latest()->take(2)->get();
         return view('obras',$data);
     }
