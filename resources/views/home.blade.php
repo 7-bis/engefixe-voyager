@@ -153,7 +153,7 @@
                                         <div class="top-box">
                                             <i class="qoute-icon zxp-icon-right-quote"></i>
                                             <div class="icon-box">
-                                                <img src="{{ Voyager::image($obra->thumbnail('small', 'imagem')) }}" alt="Imagem">
+                                                <img src="{{ Voyager::image($depo->thumbnail('small', 'imagem')) }}" alt="Imagem">
                                             </div><!-- /.icon-box -->
                                             <div class="text-box">
                                                 {{-- <h3>Professional Handling</h3> --}}
