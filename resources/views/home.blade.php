@@ -153,14 +153,14 @@
                                         <div class="top-box">
                                             <i class="qoute-icon zxp-icon-right-quote"></i>
                                             <div class="icon-box">
-                                                <img src="img/testi-1-2.jpg" alt="Imagem">
+                                                <img src="{{ Voyager::image($obra->thumbnail('small', 'imagem')) }}" alt="Imagem">
                                             </div><!-- /.icon-box -->
                                             <div class="text-box">
                                                 {{-- <h3>Professional Handling</h3> --}}
                                             </div><!-- /.text-box -->
                                         </div><!-- /.top-box -->
                                         <div class="content-box">
-                                            <p>{!! Str::limit($depo->texto,380) !!}</p>
+                                            <p>{!! Str::limit($depo->depoimento,380) !!}</p>
                                             <h4>- {{ $depo->autor }}</h4>
                                         </div><!-- /.content-box -->
                                     </div><!-- /.single-testimonial-style-one -->
