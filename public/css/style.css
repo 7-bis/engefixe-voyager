@@ -1197,6 +1197,10 @@ body.active-preloader-ovh {
   background: #232C35;
 }
 
+.site-footer .recent-post-widget img {
+    border-radius: 5px;
+}
+
 .footer-bottom {
   background: #35393D;
   padding: 13px 0;

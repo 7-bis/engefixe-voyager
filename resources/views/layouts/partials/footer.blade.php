@@ -9,8 +9,8 @@
                            <br/> Apostando no diálogo com os clientes para dar resposta as necessidades e especificações, sempre com a máxima satisfação, a empresa tem se consolidado no ramo da construção civil, fundamentada numa filosofia marcada pela inovação e qualidade constantes.
                            Confie sua obra à  Engefixe, com todos estes conceitos na caixa de ferramentas, ela tem nas mãos tudo o que precisa para que você e sua família possam viver bem!</p>
                         <div class="social">
-                            <a href="#" class="fab fa-facebook-f"></a>
-                            <a href="#" class="fab fa-instagram"></a>
+                            <a href="https://www.instagram.com/engefixe" target="_blank" class="fab fa-facebook-f"></a>
+                            <a href="https://www.facebook.com/engefixe" target="_blank" class="fab fa-instagram"></a>
                         </div><!-- /.social -->
                     </div><!-- /.footer-widget about-widget -->
                 </div><!-- /.col-md-3 -->
@@ -36,7 +36,7 @@
                         @foreach($latest_constructions as $obra)
                         <div class="single-recent-post">
                             <div class="img-box">
-                                <img src="{{ Voyager::image($obra->imagem) }}" width="100" alt="Awesome Image">
+                                <img src="{{ Voyager::image($obra->thumbnail('small', 'imagem')) }}" width="100" alt="Awesome Image">
                             </div><!-- /.img-box -->
                             <div class="text-box">
                                 <a href="{{ route('obras.show',['id' => $obra->id]) }}"><h4>{{ Str::limit($obra->titulo,40)}}</h4></a>
@@ -56,7 +56,7 @@
             <p>2021 © Engefixe - Todos os direitos reservados</p>
         </div><!-- /.copy-text -->
         <div class="right-link pull-right">
-            <a href="#">7Bis Web Mobile</a>
+            <a href="https://setebis.com.br" target="_blank">7Bis Web Mobile</a>
         </div><!-- /.right-link -->
     </div><!-- /.container -->
 </div><!-- /.footer-bottom -->

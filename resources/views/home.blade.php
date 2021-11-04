@@ -24,7 +24,7 @@
                                     <h2 data-animation="animated fadeInUp" class="">{{ $banner->subtitulo }}
                                     </h2>
                                     {{-- <p data-animation="animated fadeInDown" class="">{{$banner->text}}</p> --}}
-                                    @if ($banner->link != null) <a href="#" class="banner-btn" data-animation="animated fadeInDown">Ver mais</a> @endif
+                                    @if ($banner->link != null) <a href="{{ $banner->link }}" class="banner-btn" data-animation="animated fadeInDown">Ver mais</a> @endif
                                 </div>
                             </div>
                         </div>
