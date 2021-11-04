@@ -9,7 +9,7 @@ use TCG\Voyager\Traits\Resizable;
 
 class Obra extends Model
 {
-
+    use Resizable;
     use HasFactory;
 
     public function categories(){
