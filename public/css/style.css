@@ -1949,6 +1949,9 @@ body.active-preloader-ovh {
   top: 0;
   right: 20px;
 }
+.testimonials-style-one .single-testimonial-style-one img {
+    border-radius: 5px;
+}
 .testimonials-style-one .single-testimonial-style-one .top-box .icon-box, .testimonials-style-one .single-testimonial-style-one .top-box .text-box {
   display: table-cell;
   vertical-align: middle;
@@ -3302,6 +3305,7 @@ body.active-preloader-ovh {
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  border-radius: 5px;
 }
 .blog-style-two .single-blog-style-two .img-box:after {
   content: '';
