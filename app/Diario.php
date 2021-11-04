@@ -4,9 +4,12 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
+use TCG\Voyager\Traits\Resizable;
 
 class Diario extends Model
 {
+    use Resizable;
+
     public function obra()
     {
         return $this->belongsTo(SysObra::class);
