@@ -63,7 +63,7 @@
                             <p>{!! $servico->texto !!}</p>
                         </div><!-- /.text-box -->
                         <div class="img-box">
-                          <img src="{{Voyager::image($servico->imagem)}}" alt="Awesome Image" style="width: 100%">
+                          <img id="servico-imagem-atual" src="{{Voyager::image($servico->imagem)}}" alt="Awesome Image" style="width: 100%">
                         </div><!-- /.img-box -->
                     </div><!-- /.single-blog-style-one -->
                       {{-- <h3>{{ $servico->titulo }}</h3>
@@ -74,7 +74,7 @@
                       </div><!-- /.img-box --> --}}
                       <br>
                       @if($servico->imagens)
-                      <div class="single-service-carousel owl-theme owl-carousel">
+                      <div class="single-service-carousel owl-theme owl-carousel owl-thumb-clickable">
                         @foreach (json_decode($servico->imagens, true) as $imagem)
                         <div class="item">
                             <img src="{{Voyager::image($imagem)}}" alt="Awesome Image"/>

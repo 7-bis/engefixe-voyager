@@ -60,7 +60,7 @@
                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                     <div class="single-service-style-one">
                                         <div class="img-box">
-                                            <img src="{{ Voyager::image($servico->thumbnail('small', 'imagem')) }}" alt="Awesome Image">
+                                            <img src="{{ Voyager::image($servico->thumbnail('small', 'imagem')) }}" alt="Imagem">
                                             <a href="{{ route('servicos.show',['id' => $servico->id]) }}" class="read-more fas fa-link"></a>
                                         </div><!-- /.img-box -->
                                         <div class="content-box">

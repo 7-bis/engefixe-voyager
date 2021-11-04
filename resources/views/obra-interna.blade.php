@@ -31,12 +31,12 @@
                       <p>{!!$construction->texto!!}</p>
                   </div><!-- /.text-box -->
                   <div class="img-box">
-                    <img src="{{Voyager::image($construction->imagem)}}" alt="Awesome Image">
+                    <img id="servico-imagem-atual" src="{{Voyager::image($construction->imagem)}}" alt="Awesome Image">
                   </div><!-- /.img-box -->
               </div><!-- /.single-blog-style-one -->
               <p></p>
               @if($construction->imagens)
-              <div class="single-service-carousel owl-theme owl-carousel owl-loaded">
+              <div class="single-service-carousel owl-theme owl-carousel owl-loaded owl-thumb-clickable">
                   @foreach (json_decode($construction->imagens, true) as $imagem)
                     <div class="item">
                         <img src="{{Voyager::image($imagem)}}" alt="Awesome Image">

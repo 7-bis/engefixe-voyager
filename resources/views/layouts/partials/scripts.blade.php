@@ -10,3 +10,4 @@
 <script src="{{asset('js/wow.min.js')}}"></script>
 <script src="{{asset('js/jquery.easing.min.js')}}"></script>
 <script src="{{asset('js/custom.js')}}"></script>
+<script src="{{asset('js/setebis.js')}}"></script>
