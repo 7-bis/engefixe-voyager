@@ -43,7 +43,7 @@
             <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="single-service-style-one">
                     <div class="img-box">
-                        <img src="{{ $obra->imagem ? Voyager::image($depo->thumbnail('small', 'imagem')) : '/img/placeholder.jpeg'}}" alt="Awesome Image">
+                        <img src="{{ $obra->imagem ? Voyager::image($obra->thumbnail('small', 'imagem')) : '/img/placeholder.jpeg'}}" alt="Awesome Image">
                         <a href="{{ route('obras.show',['id' => $obra->id]) }}" class="read-more fas fa-link"></a>
                     </div><!-- /.img-box -->
                     <div class="content-box">
