@@ -14,7 +14,7 @@ class ServicosController extends Controller
 {
     public function categoria($categoria_id = null) {
         $data['categories'] = CategoriaServico::all();
-        $data['servicos'] = $categoria_id == null ? Servico::all() : Servico::where('category_id',$categoria_id)->get();
+        $data['servicos'] = $categoria_id == null ? Servico::with('categoria')->get() : Servico::where('category_id',$categoria_id)->get();
         $data['latest_constructions'] = Servico::latest()->take(2)->get();
         return view('servicos',$data);
     }

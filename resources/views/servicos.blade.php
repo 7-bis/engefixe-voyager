@@ -69,9 +69,9 @@
                                             </div><!-- /.icon-box -->
                                             <div class="text-box">
                                                 <a href="{{ route('servicos.show',['id' => $servico->id]) }}">
-                                                    <h3>{{ $servico->titulo }}</h3>
+                                                    <h3>{{ Str::limit($servico->titulo,20) }}</h3>
                                                 </a>
-                                                <p>{{ Str::limit($servico->titulo,50) }}</p>
+                                                <p>{{ Str::limit($servico->categoria->nome,50) }}</p>
                                             </div><!-- /.text-box -->
                                         </div><!-- /.content-box -->
                                     </div><!-- /.single-service-style-one -->
