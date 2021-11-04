@@ -218,7 +218,7 @@
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="single-blog-style-two">
                             <div class="img-box">
-                                <img src="{{ url('img/s1.jpg') }}" alt="Awesome Image">
+                                <img src="{{ Voyager::image($service->imagem) }}" alt="Awesome Image">
                                 <a href="{{ route('servicos.show', ['id' => $service->id]) }}" class="read-more">Ver
                                     mais</a>
                             </div><!-- /.img-box -->
