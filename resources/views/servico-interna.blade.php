@@ -57,9 +57,22 @@
           <div class="col-md-8">
               <div class="has-left-sidebar">
                   <div class="single-service-page-content">
-                      <h3>{{ $servico->titulo }}</h3>
+                    <div class="single-blog-style-one">
+                        <div class="text-box">
+                            <a href="blog-details.html"><h3>{{ $servico->titulo }}</h3></a>
+                            <p>{!! $servico->texto !!}</p>
+                        </div><!-- /.text-box -->
+                        <div class="img-box">
+                          <img src="{{Voyager::image($servico->imagem)}}" alt="Awesome Image" style="width: 100%">
+                        </div><!-- /.img-box -->
+                    </div><!-- /.single-blog-style-one -->
+                      {{-- <h3>{{ $servico->titulo }}</h3>
                       <p>{!! $servico->texto !!}</p>
-                      <br><br>
+                      <br>
+                      <div class="img-box">
+                        <img src="{{Voyager::image($servico->imagem)}}" alt="Awesome Image">
+                      </div><!-- /.img-box --> --}}
+                      <br>
                       @if($servico->imagens)
                       <div class="single-service-carousel owl-theme owl-carousel">
                         @foreach (json_decode($servico->imagens, true) as $imagem)

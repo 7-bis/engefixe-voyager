@@ -1905,6 +1905,12 @@ body.active-preloader-ovh {
           transform: scale(2);
   background: #46909b;
 }
+.single-service-page-content .single-service-carousel img {
+    cursor: pointer;
+}
+.single-service-page-content .single-service-carousel img:hover {
+    opacity: 0.8;
+}
 .single-service-page-content .single-service-tab-content {
   margin-top: 40px;
 }
