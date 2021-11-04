@@ -15,7 +15,7 @@
         <div class="carousel-inner" role="listbox">
             @foreach ($banners as $banner)
                 <div @if ($loop->first) class="carousel-item item active" @else class="carousel-item item" @endif
-                    style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5),  rgba(0, 0, 0, 0.5)), url('{{ Voyager::image($banner->image) }}');background-position: center center;">
+                    style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6),  rgba(0, 0, 0, 0.6)), url('{{ Voyager::image($banner->image) }}');background-position: center center;">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="box valign-middle">

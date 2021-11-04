@@ -5,7 +5,7 @@
                 <p><i class="fas fa-envelope-open"></i>contato@engefixe.com.br</p>
             </div><!-- /.pull-left -->
             <div class="pull-right right-contact-info">
-                <p><i class="zxp-icon-old-telephone-ringing"></i>(84) 3318-3330 | (84) 98840-0090</p><!--
+                <p><i class="zxp-icon-old-telephone-ringing"></i>(84) 3318-3330 | 98840-0090</p><!--
                 --><!--<p>
                     <i class="fas fa-globe"></i>
                      /.select-box
