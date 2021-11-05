@@ -21,7 +21,7 @@
     </div><!-- /.container -->
 </section>
 
-<section class="blog-style-two project-style-one" style="padding-top: 100px">
+{{-- <section class="blog-style-two project-style-one" style="padding-top: 100px">
 
     <div class="gallery-filter">
         <ul class="post-filter masonary text-center">
@@ -29,14 +29,76 @@
             @foreach ($categorias_obras as $categoria)
                 <li class="filter " data-filter=".oil"><a href="{{ route('obras.categoria',$categoria->id) }}"><span>{{$categoria->name}}</span></a></li>
             @endforeach
-            {{-- <li class="filter active" data-filter=".masonary-item"><span>Em construção</span></li> --}}
-            {{-- <li class="filter " data-filter=".construction"><span>Concluídos</span></li> --}}
-            {{-- <li class="filter " data-filter=".oil"><span>Lançamentos</span></li> --}}
         </ul><!-- /.post-filter -->
     </div>
 
+</section> --}}
+
+<section class="single-service-page sec-pad">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="sidebar sidebar-left">
+                    <div class="single-sidebar service-list-sidebar">
+                        <ul class="service-lists">
+                            <li><a href="{{ route('obras.index') }}">Todos os serviços</a></li>
+                            @foreach ($categorias_obras as $category)
+                                <li><a href="{{ route('obras.categoria',['id' => $category->id]) }}">{{ $category->name }}</a></li>
+                            @endforeach
+                        </ul><!-- /.service-lists -->
+                    </div><!-- /.single-sidebar -->
+                    <div class="single-sidebar contact-sidebar">
+                        <div class="title">
+                            <h3>Contatos</h3>
+                        </div><!-- /.title -->
+                        <div class="single-contact-info">
+                            <i class="zxp-icon-old-telephone-ringing"></i>
+                            <p>(84) 3318-3330</br>(84) 98840-0090</p>
+                        </div><!-- /.single-contact-info -->
+                        <div class="single-contact-info">
+                            <i class="fas fa-envelope-open"></i>
+                            <p>contato@engefixe.com.br</p>
+                        </div><!-- /.single-contact-info -->
+                        <div class="single-contact-info">
+                            <i class="fas fa-home"></i>
+                            <p>Av. Francisco Mota, 98<br> Melbourne, AustraliaAlto de São Manoel</p>
+                        </div><!-- /.single-contact-info -->
+                    </div><!-- /.single-sidebar -->
+                </div><!-- /.sidebar -->
+            </div><!-- /.col-md-4 -->
+            <div class="col-md-8">
+                <section class="service-style-one service-page">
+                        <div class="row">
+                            @foreach ($constructions as $obra)
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="single-service-style-one">
+                                    <div class="img-box">
+                                        <img src="{{ Voyager::image($obra->thumbnail('small', 'imagem')) }}" alt="Imagem">
+                                        <a href="{{ route('obras.show',['id' => $obra->id]) }}" class="read-more fas fa-link"></a>
+                                    </div><!-- /.img-box -->
+                                    <div class="content-box">
+                                        <div class="icon-box">
+                                            <i class="zxp-icon-insurance"></i>
+                                        </div><!-- /.icon-box -->
+                                        <div class="text-box">
+                                            <a href="{{ route('obras.show',['id' => $obra->id]) }}">
+                                                <h3>{{ Str::limit($obra->titulo,20) }}</h3>
+                                            </a>
+                                            <p>{{ Str::limit($obra->categories->nome,50) }}</p>
+                                        </div><!-- /.text-box -->
+                                    </div><!-- /.content-box -->
+                                </div><!-- /.single-service-style-one -->
+                            </div><!-- /.col-md-4 -->
+                            @endforeach
+                        </div><!-- /.row -->
+                </section>
+            </div><!-- /.col-md-8 -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
 </section>
-<section class="service-style-one home-page-three">
+
+
+{{-- <section class="service-style-one home-page-three">
     <div class="container">
         <div class="row">
             @foreach($constructions as $obra)
@@ -58,27 +120,7 @@
             </div><!-- /.col-md-4 -->
             @endforeach
         </div>
-        {{-- <div class="row">
-        @foreach($constructions as $obra)
-            <div class="col-md-4 col-sm-6 col-xs-12  mb-4" style="border: 1px solid #f1f1f1; border-radius: 4px; padding:0 0 15px 0; " >
-                <div class="single-blog-style-two">
-                    <div class="img-box">
-                        <img src="{{ asset('img/01.jpg') }}" alt="Awesome Image" style="border-radius: 4px; ">
-                        <a href="{{ route('obras.show',['id' => $obra->id]) }}" class="read-more">Ver projeto</a>
-                    </div><!-- /.img-box -->
-                    <div class="text-box" style="padding:0 20px 0 20px; height: 100px;">
-                        <div class="meta-info">
-                            <a href="{{ route('obras.show',['id' => $obra->id]) }}"><i class="fas fa-home"></i> {{ optional($obra->categories)->name }}</a>
-                        </div><!-- /.meta-info -->
-                        <a href="{{ route('obras.show',['id' => $obra->id]) }}"><h3>{{ Str::limit($obra->titulo,50) }}</h3></a>
-                    </div><!-- /.text-box -->
-                </div><!-- /.single-blog-style-two -->
-            </div>
-            <!-- /.col-md-4 -->
-            @endforeach
-        </div><!-- /.row --> --}}
-
     </div><!-- /.container -->
-</section><!-- /.blog-style-two -->
+</section><!-- /.blog-style-two --> --}}
 
 @endsection

@@ -17,7 +17,7 @@ use TCG\Voyager\Facades\Voyager;
 */
 
 Route::get('/', [HomeController::class,'index']);
-Route::get('/obras', [ObraController::class,'index']);
+Route::get('/obras', [ObraController::class,'index'])->name('obras.index');
 Route::get('/obras/{id}', [ObraController::class,'show'])->name('obras.show');
 Route::get('/obras/{id?}/categoria', [ObraController::class,'categoria'])->name('obras.categoria');
 Route::get('/servicos', [ServicosController::class,'categoria'])->name('servicos.index');
