@@ -3,7 +3,7 @@
 @section('content')
     <div class="login-container">
 
-        <p>{{ __('voyager::login.signin_below') }}</p>
+        <p>INICIAR SESSÃO ABAIXO:</p>
 
         <form action="{{ route('voyager.login') }}" method="POST">
             {{ csrf_field() }}
@@ -23,13 +23,13 @@
 
             <div class="form-group" id="rememberMeGroup">
                 <div class="controls">
-                    <input type="checkbox" name="remember" id="remember" value="1"><label for="remember" class="remember-me-text">{{ __('voyager::generic.remember_me') }}</label>
+                    <input type="checkbox" name="remember" id="remember" value="1"><label for="remember" class="remember-me-text">Lembrar-me</label>
                 </div>
             </div>
 
             <button type="submit" class="btn btn-block login-button">
                 <span class="signingin hidden"><span class="voyager-refresh"></span> {{ __('voyager::login.loggingin') }}...</span>
-                <span class="signin">{{ __('voyager::generic.login') }}</span>
+                <span class="signin">ENTRAR</span>
             </button>
 
         </form>
