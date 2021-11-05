@@ -9,8 +9,8 @@
                            <br/> Apostando no diálogo com os clientes para dar resposta as necessidades e especificações, sempre com a máxima satisfação, a empresa tem se consolidado no ramo da construção civil, fundamentada numa filosofia marcada pela inovação e qualidade constantes.
                            Confie sua obra à  Engefixe, com todos estes conceitos na caixa de ferramentas, ela tem nas mãos tudo o que precisa para que você e sua família possam viver bem!</p>
                         <div class="social">
-                            <a href="https://www.instagram.com/engefixe" target="_blank" class="fab fa-facebook-f"></a>
-                            <a href="https://www.facebook.com/engefixe" target="_blank" class="fab fa-instagram"></a>
+                            <a href="https://www.facebook.com/engefixe" target="_blank" class="fab fa-facebook-f"></a>
+                            <a href="https://www.instagram.com/engefixe" target="_blank" class="fab fa-instagram"></a>
                         </div><!-- /.social -->
                     </div><!-- /.footer-widget about-widget -->
                 </div><!-- /.col-md-3 -->
