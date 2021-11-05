@@ -28,7 +28,7 @@
             </div>
 
             <button type="submit" class="btn btn-block login-button">
-                <span class="signingin hidden"><span class="voyager-refresh"></span> {{ __('voyager::login.loggingin') }}...</span>
+                <span class="signingin hidden"><span class="voyager-refresh"></span> Carregando...</span>
                 <span class="signin">ENTRAR</span>
             </button>
 
