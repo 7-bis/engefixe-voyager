@@ -30,7 +30,7 @@
                       <ul class="service-lists">
                         <li><a href="#">Todos os serviços</a></li>
                           @foreach($categoria_servicos as $category)
-                            <li><a href="#">{{ $category->nome }}</a></li>
+                          <li><a href="{{ route('servicos.categoria',['id' => $category->id]) }}">{{ $category->nome }}</a></li>
                           @endforeach
                       </ul><!-- /.service-lists -->
                   </div><!-- /.single-sidebar -->
