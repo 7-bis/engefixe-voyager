@@ -8,7 +8,7 @@ class Diario extends AbstractAction
 {
     public function getTitle()
     {
-        return 'Diário';
+        return 'Diário de obra';
     }
 
     public function getIcon()
